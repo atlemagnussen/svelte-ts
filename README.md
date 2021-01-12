@@ -4,7 +4,7 @@
 
 - Added [lit-element](https://lit-element.polymer-project.org/)
 - Added [rxjs](https://rxjs-dev.firebaseapp.com/) as a store across lit-elements and svelte elements
-- trying with snowpack
+- now with snowpack!
 
 # svelte app
 

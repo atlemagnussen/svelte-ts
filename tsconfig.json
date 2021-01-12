@@ -9,6 +9,8 @@
         "public/*"
     ],
     "compilerOptions": {
-        "experimentalDecorators": true
+        "module": "esnext",
+        "experimentalDecorators": true,
+        "types": ["svelte", "@types/snowpack-env"]
     }
 }

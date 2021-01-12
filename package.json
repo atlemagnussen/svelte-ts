@@ -5,6 +5,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
+    "starts": "snowpack dev",
     "validate": "svelte-check"
   },
   "devDependencies": {
@@ -24,6 +25,10 @@
     "@tsconfig/svelte": "^1.0.0"
   },
   "dependencies": {
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-svelte": "^3.4.1",
+    "@snowpack/plugin-typescript": "^1.1.1",
+    "@types/snowpack-env": "^2.3.3",
     "lit-element": "^2.4.0",
     "rxjs": "^6.6.3",
     "sirv-cli": "^1.0.0",
