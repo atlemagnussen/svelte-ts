@@ -2,6 +2,10 @@
 
 ---
 
+- Added [lit-element](https://lit-element.polymer-project.org/)
+- Added [rxjs](https://rxjs-dev.firebaseapp.com/) as a store across lit-elements and svelte elements
+- trying with snowpack
+
 # svelte app
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
