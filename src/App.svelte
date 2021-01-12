@@ -1,12 +1,10 @@
-<script lang="ts">
-	export let name: string;
+<script>
+	export let name;
 	import Hello from "./Hello.svelte";
 	import Input from "./Input.svelte";
-	import Counter from "./Counter.svelte";
 </script>
 
 <main>
-	<Counter />
 	<Hello input="lol" />
 	<h1>Name: {name}</h1>
 	Input: <Input />

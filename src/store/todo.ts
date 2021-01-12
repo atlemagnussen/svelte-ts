@@ -1,7 +1,7 @@
 import type { Todo } from "../models/types";
 import { BehaviorSubject } from "rxjs"
 
-const todos: Todo[] = [{task: "test1", done: false}, {task: "test2", done: true}]
+const todos: Todo[] = [{task: "test", done: false}]
 const items = new BehaviorSubject(todos)
 
 export const addTodo = (todo: Todo) => {
