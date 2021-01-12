@@ -2,13 +2,18 @@
 	export let name;
 	import Hello from "./Hello.svelte";
 	import Input from "./Input.svelte";
+
+	import { timer } from 'rxjs'
+    let tick = timer(0, 1000)
 </script>
 
 <main>
 	<Hello input="lol" />
 	<h1>Name: {name}</h1>
 	Input: <Input />
-	<todos-list></todos-list>
+	{#if $tick > 5 && $tick < 20}
+		<todos-list></todos-list>
+	{/if}
 </main>
 
 <style>
