@@ -11,7 +11,7 @@
 	<Hello input="lol" />
 	<h1>Name: {name}</h1>
 	Input: <Input />
-	{#if $tick > 5 && $tick < 20}
+	{#if $tick > 5 && ($tick < 20 || $tick > 30)}
 		<todos-list></todos-list>
 	{/if}
 </main>

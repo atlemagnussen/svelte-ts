@@ -5,7 +5,7 @@ import todoStore from "./store/todo";
 
 @customElement('todos-list')
 class TodosList extends LitElement {
-    unsubscribe$;
+    subscription$;
     static styles = css`
         :host {
             display: flex
@@ -18,7 +18,7 @@ class TodosList extends LitElement {
     }
     connectedCallback() {
         super.connectedCallback();
-        this.unsubscribe$ = todoStore.subscribe(tds => {
+        this.subscription$ = todoStore.subscribe(tds => {
             this.todos = tds;
             this.requestUpdate();
         });
@@ -27,7 +27,7 @@ class TodosList extends LitElement {
     disconnectedCallback() {
         super.disconnectedCallback();
         /* this.unsubscribe$.next([]); */
-        this.unsubscribe$.complete();
+        this.subscription$.unsubscribe();
     }
     
     render() {
