@@ -2,7 +2,7 @@
 	export let name;
 	import Hello from "./Hello.svelte";
 	import Input from "./Input.svelte";
-
+	import TypeAhead from "./TypeAhead.svelte";
 	import { timer } from 'rxjs'
     let tick = timer(0, 1000)
 </script>
@@ -11,9 +11,11 @@
 	<Hello input="lol" />
 	<h1>Name: {name}</h1>
 	Input: <Input />
+	<TypeAhead />
+	<!-- {$tick}
 	{#if $tick > 5 && ($tick < 20 || $tick > 30)}
 		<todos-list></todos-list>
-	{/if}
+	{/if} -->
 </main>
 
 <style>
